@@ -25,7 +25,7 @@ In this PoC, screenshots of the Morgan Stanley homepage (<https://morganstanley.
     - (WIP / Attempts: BLIP, Phi-3-Vision, PHI)
 
 - **Multimodal Models Experimentation Results.xlsx**
-  - All results are compiled into this spreadsheet!
+  - All results are compiled into this spreadsheet
   - Pros/cons of each model, observations/analysis, next steps/recommendations, model link, paper link, resources/hardware needed, all generated responses and their corresponding prompt and parameters (with hallucinations and best responses marked)
 
 - **Multimodal Experimentation Analysis.pdf**
@@ -59,10 +59,10 @@ Once you have all this set up, you may begin running the rest of the code in the
 
     - No hallucinations at all and describes the webpage just like a human would describe the page, able to read all the smaller text and very organized
     - Sometimes omits some text, but no longer an issue when add “Do not miss any text” to the prompt
-    - Recognizes interactivity!—VERY GOOD FOR multi-image use cases / dynamic websites where users can click on links/dropdown menus!
+    - Recognizes interactivity—VERY GOOD FOR multi-image use cases / dynamic websites where users can click on links/dropdown menus
 
 2) LLaVA-Mistral (Huggingface) — <https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf>
-    - Actually able to read/identify the smaller text!!!
+    - Actually able to read/identify the smaller text
 3) LLaVA-v1.6 (Ollama) — <https://ollama.com/library/llava>
     - Detailed description, but riddled with hallucinations—further prompt engineering improved results but only to a certain point. Root cause might be possibly be due to resolution curse (can’t recognize smaller text + can only read giant headers and images)
     - LLaVA-v1.6 in general supports multi-image inputs, which would be useful for few-shot prompting
@@ -119,7 +119,7 @@ Once you have all this set up, you may begin running the rest of the code in the
     - Image resolution / resolution curse: LLaVA can't seem to read/recognize the smaller text (only very large text/headings + images)
     - Try FEW-SHOT: The newer LLaVA 1.6 supports multi-image inputs — may be useful esp if we have multiple screenshots for capturing website interactions
 - Few-Shot Prompting with Multi-Image Inputs
-  - Try LLaVA-NeXT-Interleave!?
+  - Try LLaVA-NeXT-Interleave
   - <https://github.com/haotian-liu/LLaVA/issues/197>
 
 ### OTHER HELPFUL LINKS
